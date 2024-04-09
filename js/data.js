@@ -32,12 +32,12 @@ const comments = Array.from({length: getRandomInteger(0, 30)}, getComment);
 function toDiscript(){
   return{
     id: ++discriptId,
-    url: `url/${++urlId}`,
+    url: `/photos/${++urlId}.jpg`,
     description: 'Это я пляже',
     likes: getRandomInteger(MIN_LIKES, MAX_LIKES),
     Comments: comments,};
 }
 
-const genDiscript = Array.from({length: 25}, toDiscript);
+const getDiscript = Array.from({length: 25}, toDiscript);
 
-export {genDiscript};
+export {getDiscript};

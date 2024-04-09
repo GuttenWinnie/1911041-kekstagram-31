@@ -1,3 +1,7 @@
-import {genDiscript} from '/js/data.js';
+import {getDiscript} from '/js/data.js';
+import {fragment} from './render.js';
 
-console.log(genDiscript);
+const pictureArea = document.querySelector('.pictures');
+pictureArea.appendChild(fragment);
+
+console.log(getDiscript);
